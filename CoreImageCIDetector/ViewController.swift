@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // properties 
+    // properties
     var filePath: NSString = ""
     var fileNameAndPath = NSURL()
     var image = CIImage()
@@ -18,7 +18,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        filePath = NSBundle.mainBundle().pathForResource("emotions", ofType: "jpg")!
+        fileNameAndPath = NSURL.fileURLWithPath(filePath as String)
+        image = CIImage(contentsOfURL: fileNameAndPath)!
+        
+        let context = CIContext(options: nil)
+        let options = NSDictionary(object: CIDetectorAccuracyHigh, forKey: CIDetectorAccuracy)
+        let detector = CIDetector(ofType: CIDetectorTypeFace, context: context, options: options as? [String: AnyObject])
+        let features: NSArray = detector.featuresInImage(image, options: [CIDetectorSmile:true, CIDetectorEyeBlink:true])
+        let imgView = UIImageView(image: UIImage(named: "emotions.jpg"))
+        self.view.addSubview(imgView)
+        
+        
         
         
     }
