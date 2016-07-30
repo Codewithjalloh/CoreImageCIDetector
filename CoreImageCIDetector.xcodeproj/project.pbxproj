@@ -14,6 +14,7 @@
 		58D22F641D4D52D700B1E2D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D22F621D4D52D700B1E2D7 /* LaunchScreen.storyboard */; };
 		58D22F6F1D4D52D700B1E2D7 /* CoreImageCIDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D22F6E1D4D52D700B1E2D7 /* CoreImageCIDetectorTests.swift */; };
 		58D22F7A1D4D52D700B1E2D7 /* CoreImageCIDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D22F791D4D52D700B1E2D7 /* CoreImageCIDetectorUITests.swift */; };
+		58D22F881D4D52E400B1E2D7 /* emotions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58D22F871D4D52E400B1E2D7 /* emotions.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		58D22F751D4D52D700B1E2D7 /* CoreImageCIDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreImageCIDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D22F791D4D52D700B1E2D7 /* CoreImageCIDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageCIDetectorUITests.swift; sourceTree = "<group>"; };
 		58D22F7B1D4D52D700B1E2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D22F871D4D52E400B1E2D7 /* emotions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emotions.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		58D22F581D4D52D700B1E2D7 /* CoreImageCIDetector */ = {
 			isa = PBXGroup;
 			children = (
+				58D22F871D4D52E400B1E2D7 /* emotions.jpg */,
 				58D22F591D4D52D700B1E2D7 /* AppDelegate.swift */,
 				58D22F5B1D4D52D700B1E2D7 /* ViewController.swift */,
 				58D22F5D1D4D52D700B1E2D7 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D22F641D4D52D700B1E2D7 /* LaunchScreen.storyboard in Resources */,
+				58D22F881D4D52E400B1E2D7 /* emotions.jpg in Resources */,
 				58D22F611D4D52D700B1E2D7 /* Assets.xcassets in Resources */,
 				58D22F5F1D4D52D700B1E2D7 /* Main.storyboard in Resources */,
 			);
