@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // pro
+    // properties 
     var filePath: NSString = ""
     var fileNameAndPath = NSURL()
     var image = CIImage()
