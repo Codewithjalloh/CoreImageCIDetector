@@ -38,7 +38,15 @@ class ViewController: UIViewController {
             let rightEyeBlinking = faceFeature.rightEyeClosed
             let leftedBlinking = faceFeature.leftEyeClosed
             
+            //face location 
+            let faceRect = faceFeature.bounds
+            let faceView = UIView(frame: faceRect)
+            faceView.layer.borderWidth = 2
+            faceView.layer.borderColor = UIColor.redColor().CGColor
             
+            let faceWidth: CGFloat = faceRect.size.width
+            let faceHeight: CGFloat = faceRect.size.height
+            vistAux.addSubview(faceView)
             
             
             
