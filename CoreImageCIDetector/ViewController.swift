@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             //Detection 
             let smile = faceFeature.hasSmile
             let rightEyeBlinking = faceFeature.rightEyeClosed
-            let leftedBlinking = faceFeature.leftEyeClosed
+            let leftEyeBlinking = faceFeature.leftEyeClosed
             
             //face location 
             let faceRect = faceFeature.bounds
@@ -77,9 +77,22 @@ class ViewController: UIViewController {
             
             
             
+            // left eye location
+            let leftEyeView = UIView(frame: CGRectMake(faceFeature.leftEyePosition.x-faceWidth*0.2, faceFeature.leftEyePosition.y-faceWidth*0.2, faceWidth*0.4, faceWidth*0.4))
+            leftEyeView.layer.cornerRadius = faceWidth*0.2
+            leftEyeView.layer.borderWidth = 2
+            leftEyeView.layer.borderColor = UIColor.blueColor().CGColor
+            if (leftEyeBlinking == true ) {
+                leftEyeView.layer.backgroundColor = UIColor.yellowColor().CGColor
+            } else {
+                leftEyeView.layer.backgroundColor = UIColor.blueColor().CGColor
+            }
             
+            leftEyeView.layer.opacity = 0.5
+            vistAux.addSubview(leftEyeView)
             
         }
+        
         
         
     }
