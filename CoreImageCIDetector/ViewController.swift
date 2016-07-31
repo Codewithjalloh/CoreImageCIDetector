@@ -60,6 +60,20 @@ class ViewController: UIViewController {
                 vistAux.addSubview(smileView)
             }
             
+            // right eye location
+            let rightEyeView = UIView(frame: CGRectMake(faceFeature.rightEyePosition.x-faceWidth*0.2, faceFeature.rightEyePosition.y-faceWidth*0.2, faceWidth*0.4, faceWidth*0.4))
+            rightEyeView.layer.cornerRadius = faceWidth*0.2
+            rightEyeView.layer.borderWidth = 2
+            rightEyeView.layer.borderColor = UIColor.redColor().CGColor
+            if (rightEyeBlinking == true ) {
+                rightEyeView.layer.backgroundColor = UIColor.yellowColor().CGColor
+            } else {
+                rightEyeView.layer.backgroundColor = UIColor.redColor().CGColor
+            }
+            
+            rightEyeView.layer.opacity = 0.5
+            vistAux.addSubview(rightEyeView)
+            
             
             
             
