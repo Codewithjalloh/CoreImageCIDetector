@@ -29,7 +29,23 @@ class ViewController: UIViewController {
         let imgView = UIImageView(image: UIImage(named: "emotions.jpg"))
         self.view.addSubview(imgView)
         
-        
+        // aux view to invert 
+        let vistAux = UIView(frame: imgView.frame)
+        for faceFeature in features {
+            
+            //Detection 
+            let smile = faceFeature.hasSmile
+            let rightEyeBlinking = faceFeature.rightEyeClosed
+            let leftedBlinking = faceFeature.leftEyeClosed
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         
         
     }
