@@ -49,6 +49,18 @@ class ViewController: UIViewController {
             vistAux.addSubview(faceView)
             
             
+            // smile location
+            if (smile==true) {
+                let smileView = UIView(frame: CGRectMake(faceFeature.mouthPosition.x-faceWidth*0.18, faceFeature.mouthPosition.y-faceHeight*0.1, faceWidth*0.4, faceHeight*0.2))
+                smileView.layer.cornerRadius = faceWidth*0.1
+                smileView.layer.borderWidth = 2
+                smileView.layer.borderColor = UIColor.greenColor().CGColor
+                smileView.layer.backgroundColor = UIColor.greenColor().CGColor
+                smileView.layer.opacity = 0.5
+                vistAux.addSubview(smileView)
+            }
+            
+            
             
             
             
