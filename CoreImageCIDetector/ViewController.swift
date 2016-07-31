@@ -92,8 +92,10 @@ class ViewController: UIViewController {
             vistAux.addSubview(leftEyeView)
             
         }
+        self.view.addSubview(vistAux)
         
-        
+        //invert coords 
+        vistAux.transform = CGAffineTransformMakeScale(1, -1)
         
     }
 
